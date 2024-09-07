@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: timezone change to europe/warsaw
+    timezone:
+      name: Europe/Warsaw
